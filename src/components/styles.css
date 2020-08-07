@@ -107,6 +107,22 @@ button{
     font-size: 12rem;
     line-height: 10rem;
 }
+.home h2{
+    display: inline;
+    font-family: 'PoppinB';
+    font-size: 5rem;
+    line-height: 5rem;
+    padding-left: 6rem;
+    text-align: center;
+}
+.brown{
+    color: rgba(189, 165, 130,0.7);
+    text-shadow: rgba(255, 255, 255,0.9) 1px 1px 1px;
+}
+.white{
+    color:rgba(255, 255, 255,0.9);
+    padding-left: 6rem;
+}
 @keyframes comein{
     0%{
         transform: translateX(-100%);
