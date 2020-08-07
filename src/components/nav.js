@@ -17,8 +17,7 @@ export default class Nav extends React.Component{
             menu.className='nothomebutton';
         }else{
             navitems.forEach((item,idx)=>{
-                console.log(idx)
-                item.style.animation=`comein ${(idx+3)/5}s`
+                item.style.animation=`comein ${(idx+3)/7}s`
             })
             this.setState({toggled:true,current:'.nothomebutton-active'});
             menu.className='nothomebutton-active'

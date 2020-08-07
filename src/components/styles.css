@@ -3,6 +3,16 @@
     font-family: 'Poppin';
     font-style: normal;
 }
+@font-face{
+    src: url('../fonts/Poppins-ExtraBold.ttf');
+    font-family: 'PoppinB';
+    font-style: normal;
+}
+@font-face{
+    src: url('../fonts/AmaticSC-Bold.ttf');
+    font-family: 'HOME';
+    font-style: normal;
+}
 *{
     font-family: 'Poppin';
     padding: 0;
@@ -37,21 +47,27 @@
     height: 5rem;
 }
 button{
+    outline: none;
     border: none;
     background: transparent;
     cursor: pointer;
     transition:all ease-out 0.2s ;
-    border-radius: 10px;
 }
 .homebutton{
     flex: 1;
     text-align: center;
 }
 .homebutton button{
+    font-family: 'HOME';
+    color: rgba(255, 255, 255,0.9);
+    text-shadow:rgba(0, 0, 0, 0.7) 1px 1px 1px ;
     width: 40%;
     padding-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 3rem;
     height: 100%;
+}
+.homebutton button:hover{
+    font-size: 3.5rem;
 }
 .nothomebutton{
     flex: 3;
@@ -64,6 +80,12 @@ button{
     padding-top: 1rem;
     width: 20%;
     height: 100%;
+    border-radius: 4px;
+}
+.nav-item:hover{
+    background-color: rgba(189, 165, 130,0.7);
+    padding-top: 1.5rem;
+
 }
 .toggle-menu{
     padding-top: 2rem;
@@ -73,12 +95,33 @@ button{
     display: none;
     opacity: 0.7;
 }
+.home{
+    height: calc(100vh - 5rem);
+}
+.home h1{
+    color: rgba(189, 165, 130,0.7);
+    text-shadow: rgba(255, 255, 255,0.9) 1px 1px 1px;
+    padding-top: 18vw;
+    padding-left: 6rem;
+    font-family: 'PoppinB';
+    font-size: 12rem;
+    line-height: 10rem;
+}
 @keyframes comein{
     0%{
         transform: translateX(-100%);
     }
     100%{
         transform: translateX(0%);
+    }
+}
+@media only screen and (max-width: 900px){
+    .home h1{
+        font-size: 8.5rem;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 3rem;
+        line-height:7rem ;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -96,6 +139,7 @@ button{
         color: white;
         width: auto;
         height: auto;
+
     }
     .nothomebutton-active{
         display: flex;
@@ -110,6 +154,15 @@ button{
     }
     .toggle-menu img{
         display: block;
+    }
+    .home h1{
+        color: rgba(189, 165, 130,0.6);
+        text-shadow: rgba(255, 255, 255,0.8) 0.5px 0.5px 1px;;
+        font-size: 5.5rem;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 3rem;
+        line-height:5rem ;
     }
   }
 
