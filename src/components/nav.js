@@ -23,17 +23,20 @@ export default class Nav extends React.Component{
             menu.className='nothomebutton-active'
         }
     }
+    idrfunction=(name)=>{
+        this.props.Changer({name});
+    }
     render(){
         return(
             <div className='navbar'>
                 <div className='homebutton'>
-                    <button>Home</button>
+                    <button onClick={this.idrfunction.bind(this,0)}>Home</button>
                 </div>
                 <div className='nothomebutton'>
-                    <button className='nav-item'>Projects</button>
-                    <button className='nav-item'>Education</button>
-                    <button className='nav-item'>Skills</button>
-                    <button className='nav-item'>About</button>
+                    <button  onClick={this.idrfunction.bind(this,1)} className='nav-item'>Projects</button>
+                    <button  onClick={this.idrfunction.bind(this,2)} className='nav-item'>Education</button>
+                    <button  onClick={this.idrfunction.bind(this,3)} className='nav-item'>Skills</button>
+                    <button  onClick={this.idrfunction.bind(this,4)} className='nav-item'>About</button>
                 </div>
                 <div className='toggle-menu'>
                     <button onClick={this.toggle}>

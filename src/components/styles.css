@@ -28,15 +28,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.black-layer{
-    background:rgba(0, 0, 0, 0.1);
-    position: relative;
-    min-height: 100vh;
-    min-width: 100vw;
-    transition: all 0.5s ease;
-}
 .black-layer-activate{
-    background:rgba(0, 0, 0, 0.7);
+    background:rgba(0, 0, 0, 0.1);
     position: relative;
     min-height: 100vh;
     min-width: 100vw;
@@ -125,6 +118,24 @@ button{
 }
 .white{
     color:rgba(255, 255, 255,0.9);
+}
+.skillswhole{
+    color:rgba(255, 255, 255,0.7);
+    text-shadow:rgba(189, 165, 130,0.7) 1px 1px 1px ;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20vh;
+    font-size: 2rem;
+    line-height: 10rem;
+}
+.skillswhole h1{
+    font-family: 'HOME';
+    font-size: 6rem;
+    text-decoration: underline;
+}
+.skillswhole li{
+    line-height: 3rem;
+    text-align: center;
 }
 @keyframes comein{
     0%{

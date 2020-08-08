@@ -13,7 +13,6 @@ export default class Home extends React.Component{
             element.style.marginTop=`${y/(150*(idx+1))}px`;
         })
     }
-
     render(){
         return(
             <div onMouseMove={this.postion} className='home'>
