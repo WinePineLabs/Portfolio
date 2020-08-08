@@ -18,6 +18,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    overflow: hidden;
 }
 .background{
     background-image: url('../images/background.jpg');
@@ -42,7 +43,6 @@
     transition: all 0.5s ease;
 }
 .navbar{
-    color: black;
     display: flex;
     height: 5rem;
 }
@@ -76,6 +76,7 @@ button{
     transition: all 0.1s ease-in;
 }
 .nav-item{
+    color:rgba(255, 255, 255,0.7);
     font-size: 1.4rem;
     padding-top: 1rem;
     width: 20%;
@@ -112,8 +113,11 @@ button{
     font-family: 'PoppinB';
     font-size: 5rem;
     line-height: 5rem;
-    padding-left: 6rem;
     text-align: center;
+}
+.description{
+    padding-top: 2.5rem;
+    padding-left: 6rem;
 }
 .brown{
     color: rgba(189, 165, 130,0.7);
@@ -121,7 +125,6 @@ button{
 }
 .white{
     color:rgba(255, 255, 255,0.9);
-    padding-left: 6rem;
 }
 @keyframes comein{
     0%{
@@ -136,8 +139,33 @@ button{
         font-size: 8.5rem;
         text-align: center;
         padding-left: 0;
-        padding-top: 3rem;
+        padding-top: 7rem;
         line-height:7rem ;
+    }
+    .description{
+        padding-top: 50%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .description h2{
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-height: 700px) and   (orientation:landscape){
+    *{
+        font-size: 0.8rem;
+    }
+    .home h1{
+        font-size: 8vw;
+        line-height: 6.5vw;
+        padding-left: 6rem;
+        text-align: left;
+    }
+    .description{
+        padding-top: 8%;
+    }
+    .description h2{
+        font-size: 4vw;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -152,10 +180,8 @@ button{
         transform: translateX(-110%);
     }
     .nav-item{
-        color: white;
         width: auto;
         height: auto;
-
     }
     .nothomebutton-active{
         display: flex;
@@ -172,13 +198,20 @@ button{
         display: block;
     }
     .home h1{
-        color: rgba(189, 165, 130,0.6);
+        color: rgb(189, 165, 130,);
         text-shadow: rgba(255, 255, 255,0.8) 0.5px 0.5px 1px;;
-        font-size: 5.5rem;
+        font-size: 5rem;
         text-align: center;
         padding-left: 0;
         padding-top: 3rem;
-        line-height:5rem ;
+        line-height:4.5rem ;
+    }
+    .description{
+        padding-top: 60%;
+    }
+    .description h2{
+        font-size: 2.5rem;
+        line-height: 2rem;
     }
   }
 
