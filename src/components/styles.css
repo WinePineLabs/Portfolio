@@ -137,6 +137,24 @@ button{
     line-height: 3rem;
     text-align: center;
 }
+.educationwhole{
+    min-height: 70vh;
+    color:rgba(255, 255, 255,0.7);
+    text-shadow:rgba(189, 165, 130,0.7) 1px 1px 1px ;
+    margin-top: 20vh;
+    font-size: 2rem;
+    line-height: 15rem;
+    text-align: center;
+}
+.educationwhole h1{
+    font-family: 'HOME';
+    font-size: 6rem;
+    text-decoration: underline;
+}
+.educationwhole h2{
+    line-height: 5rem;
+    text-align: center;
+}
 @keyframes comeinfrombottom{
     0%{
         transform: translateY(100%);
@@ -185,6 +203,7 @@ button{
 @media only screen and (max-height: 700px) and   (orientation:landscape){
     *{
         font-size: 0.8rem;
+        overflow: visible;
     }
     .home h1{
         font-size: 8vw;

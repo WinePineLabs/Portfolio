@@ -1,6 +1,8 @@
 import React from 'react'
 import Skills from './skills'
 import Home from './home'
+import Education from './education'
+import Projects from './projects'
 
 export default class What extends React.Component{
     state={
@@ -18,20 +20,21 @@ export default class What extends React.Component{
     render(){
         if(this.state.idxx===0){
             return(
-                <div>
-                    <h2>{this.props.yes}</h2>
                     <Home />
-
-                </div>
             )
         }else if(this.state.idxx===3){
             return(
-                <div>
-                    <h2>{this.props.yes}</h2>
                     <Skills />
-                </div>
             )
-        }
+        }else if(this.state.idxx===2){
+            return(
+                <Education />
+            )
+        }else if(this.state.idxx===1){
+        return(
+            <Projects />
+        )
+    }
     }
 
 

@@ -9,7 +9,7 @@ export default class Background extends React.Component{
         idx:0
     }
     componentDidUpdate(){
-        if(this.state.idx===3){
+        if(this.state.idx!==0){
             document.querySelector('.black-layer-activate').style.background='rgba(0,0,0,0.7)'
         }else{
             document.querySelector('.black-layer-activate').style.background='rgba(0,0,0,0.1)'
