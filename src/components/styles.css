@@ -77,9 +77,8 @@ button{
     border-radius: 4px;
 }
 .nav-item:hover{
-    background-color: rgba(189, 165, 130,0.7);
+    color:rgba(255, 255, 255,1);
     padding-top: 1.5rem;
-
 }
 .toggle-menu{
     padding-top: 2rem;
@@ -120,6 +119,7 @@ button{
     color:rgba(255, 255, 255,0.9);
 }
 .skillswhole{
+    min-height: 70vh;
     color:rgba(255, 255, 255,0.7);
     text-shadow:rgba(189, 165, 130,0.7) 1px 1px 1px ;
     display: flex;
@@ -136,6 +136,26 @@ button{
 .skillswhole li{
     line-height: 3rem;
     text-align: center;
+}
+@keyframes comeinfrombottom{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes comeoutfrombottom{
+    0%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
 }
 @keyframes comein{
     0%{
