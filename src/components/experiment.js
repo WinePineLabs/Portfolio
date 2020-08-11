@@ -13,7 +13,6 @@ export default class What extends React.Component{
     }
     updateProp=(passed)=>{
         if(this.state.idxx!=passed){
-
             this.setState({idxx:passed})
         }
     }

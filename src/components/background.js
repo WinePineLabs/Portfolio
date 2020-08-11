@@ -16,7 +16,12 @@ export default class Background extends React.Component{
         }
     }
     changeCurrent=(newName)=>{
-        this.setState({idx:newName.name})
+        var bottomsection=document.querySelector('.yeet')
+        bottomsection.style.animation='comeoutfrombottom 0.3s'
+        bottomsection.addEventListener('animationend',()=>{
+            this.setState({idx:newName.name})
+                bottomsection.style.animation='comeinfrombottom 0.3s'
+        })
     }
     
     render(){
@@ -24,7 +29,9 @@ export default class Background extends React.Component{
             <div className="background">
                 <div className="black-layer-activate">
                     <Navbar Changer={this.changeCurrent.bind(this)} />
+                    <div className='yeet'>
                     <Experiment idx={this.state.idx}/>
+                    </div>
                 </div>
             </div>
         )
